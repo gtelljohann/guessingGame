@@ -1,0 +1,26 @@
+h1 {
+text-align:center;
+}
+
+.right-float {
+float:right;
+}
+
+#guess_form {
+}
+
+.row {
+padding-top:30px;
+}
+
+.hot {
+color:red;
+}
+
+.cold {
+color:blue;
+}
+
+.correct {
+color:green;
+}

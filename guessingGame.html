@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<link href="../../bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+<div class="container"><br/>
+<div class="jumbotron">
+<h1>Guess That Number!</h1>
+
+<div id="notification"> </div>
+<form id="guess_form">
+<div class="input-group">
+<input type="text" class="form-control" name="guess" 
+	placeholder="Enter you guess here (1-100)" autocomplete="off"/>
+<span class="input-group-btn">
+<button class="btn btn-default" type="submit" id="submit-guess">Submit Your Guess</button>
+</span>
+</div>
+</form>
+
+<div class="row" id="prev_guesses">
+<div class="col-md-4"><span class="h3">Previous Guesses:</span></div>
+</div>
+<div class="row"> 
+<div class="col-md-4">
+<span class="h3">Guesses remaining: </span>
+</div>
+<div class="col-md-4">
+<span class="h3" id="guesses_remaining">5</span>
+</div>
+<div class="col-md-4">
+<span class="right-float">
+<button type="button" class="btn btn-primary" id="restart">
+	<span class="glyphicon glyphicon-repeat"></span> Start Over
+</button>
+<button type="button" class="btn btn-danger" id="forfeit">I Give Up!</button>
+</span>
+</div>
+</div>
+
+</div>
+
+
+</div>
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
