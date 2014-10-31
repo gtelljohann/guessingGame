@@ -57,6 +57,8 @@ function submitGuess(submission) {
 	if (guesses.length > 1) {
 		if (current_dist < prev_dist) {
 			hot_message += "is warmer than your last guess, ";
+		} else if (current_dist == prev_dist) {
+			hot_message += "is just as warm as your last guess, ";
 		} else {
 			hot_message += "is cooler than your last guess, ";
 		}
